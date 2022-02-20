@@ -20,5 +20,5 @@ form {
 }
 
 .error-label {
-  @apply text-red-500 text-left mb-6 block font-semibold;
+  @apply text-red-500 text-left mb-6 font-semibold;
 }

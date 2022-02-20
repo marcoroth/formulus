@@ -36,6 +36,9 @@ application.register('validation', class extends Controller {
           errorLabel.classList.add('error-label')
           event.target.parentNode.insertBefore(errorLabel, event.target.nextSibling)
         }
+
+        event.target.errorLabel.classList.add('block')
+        event.target.errorLabel.classList.remove('hidden')
       })
 
       input.addEventListener('change', event => {
@@ -50,6 +53,8 @@ application.register('validation', class extends Controller {
         event.target.classList.remove('error')
         if (event.target.errorLabel) {
           event.target.errorLabel.textContent = ''
+          event.target.errorLabel.classList.add('hidden')
+          event.target.errorLabel.classList.remove('block')
         }
       })
     })
