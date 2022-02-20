@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 input {
-  @apply px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500;
+  @apply w-full shadow-sm rounded-md px-4 py-2;
   @apply block mb-3 mx-auto;
 }
 
@@ -16,9 +16,5 @@ form {
 }
 
 .error {
-  @apply text-white bg-red-300;
-}
-
-.error::-webkit-input-placeholder {
-  color: white;
+  @apply border-red-300 text-black bg-red-100;
 }

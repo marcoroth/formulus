@@ -5,15 +5,20 @@ import { Application, Controller } from '@hotwired/stimulus'
 const application = Application.start()
 
 application.register('validation', class extends Controller {
+  static values = { report: true }
 
   connect() {
-    this.registerInputs()
+    if (this.shouldValidate) {
+      this.registerInputs()
+    }
   }
 
   submit(event) {
-    if (!this.allValid) {
-      event.preventDefault()
-      console.log("invalid form")
+    if (this.shouldValidate) {
+      if (!this.allValid) {
+        event.preventDefault()
+        console.log("invalid form")
+      }
     }
   }
 
@@ -34,15 +39,27 @@ application.register('validation', class extends Controller {
   }
 
   get allValid() {
-    return this.checkValidity().every(valid => valid)
+    if (this.reportValue) {
+      return this.reportValidity().every(valid => valid)
+    } else {
+      return this.checkValidity().every(valid => valid)
+    }
   }
 
-  checkValidity() {
+  reportValidity() {
     return this.inputs.map(input => input.reportValidity())
   }
 
+  checkValidity() {
+    return this.inputs.map(input => input.checkValidity())
+  }
+
+  get shouldValidate() {
+    return !this.element.hasAttribute('novalidate')
+  }
+
   get inputs() {
-    return Array.from(this.element.querySelectorAll('input'))
+    return Array.from(this.element.querySelectorAll('input')).reverse()
   }
 })
 
