@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" src="/main.js"></script>
+  </head>
+  
+  <body class="p-12 container mx-auto text-center">
+    <form data-controller="validation" data-action="submit->validation#submit" novalidate>
+      <input/>
+   
+      <input required placeholder="required"/>
+
+      <input minlength="3" required placeholder="required minlength=3"/>
+
+      <input data-action="click->validation#submit" type="submit" value="submit">
+   </form>
+
+  </body>
+</html>
