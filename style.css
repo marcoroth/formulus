@@ -18,3 +18,7 @@ form {
 .error {
   @apply border-red-300 text-black bg-red-100;
 }
+
+.error-label {
+  @apply text-red-500 text-left mb-6 block font-semibold;
+}

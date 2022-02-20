@@ -26,14 +26,31 @@ application.register('validation', class extends Controller {
     this.inputs.forEach(input => {
       input.addEventListener('invalid', event => {
         event.target.classList.add('error')
+
+        if (event.target.errorLabel) {
+          event.target.errorLabel.textContent = event.target.validationMessage
+        } else {
+          const errorLabel = document.createElement('label')
+          errorLabel.textContent = event.target.validationMessage
+          event.target.errorLabel = errorLabel
+          errorLabel.classList.add('error-label')
+          event.target.parentNode.insertBefore(errorLabel, event.target.nextSibling)
+        }
       })
 
       input.addEventListener('change', event => {
-        event.target.reportValidity()
+        if (this.reportValue) {
+          event.target.reportValidity()
+        } else {
+          event.target.checkValidity()
+        }
       })
 
       input.addEventListener('input', event => {
         event.target.classList.remove('error')
+        if (event.target.errorLabel) {
+          event.target.errorLabel.textContent = ''
+        }
       })
     })
   }

@@ -9,16 +9,16 @@
   </head>
   
   <body class="p-12 container mx-auto text-center">
-    <form data-controller="validation" data-action="submit->validation#submit">
+    <form data-controller="validation" data-action="submit->validation#submit" data-validation-report-value="false">
       <input type="text" placeholder="type=text"/>
   
       <input type="text" required placeholder="type=text required"/>
 
-      <input type="email" required placeholder="required type=email" />
-
+      <input type="email" required placeholder="type=email required" />
+      
       <input type="text" minlength="3" required placeholder="type=text required minlength=3"/>
 
-      <input max="10" type="number" required placeholder="type=number required max=10"/>
+      <input min="5" max="10" type="number" required placeholder="type=number required min=5 max=10"/>
   
       <input min="10" type="number" required placeholder="type=number required min=10"/>
 
