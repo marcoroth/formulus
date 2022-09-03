@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+*.tgz
+*.tsbuildinfo
+*.log
+*~
+
+.DS_Store
+.rollup.cache

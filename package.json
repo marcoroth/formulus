@@ -2,17 +2,38 @@
   "name": "formulus",
   "version": "0.1.0-alpha.0",
   "description": "Client-side HTML form validations",
-  "main": "index.js",
-  "repository": "https://github.com/marcoroth/formulus",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
   "author": "Marco Roth",
   "license": "MIT",
+  "repository": "https://github.com/marcoroth/formulus",
   "private": false,
+  "sideEffects": false,
+  "scripts": {
+    "start": "cd playground && yarn start",
+    "prebuild": "yarn clean",
+    "build": "tsc --noEmit false --declaration true --emitDeclarationOnly true --outDir dist/types && rollup -c",
+    "watch": "rollup -wc",
+    "dev": "concurrently 'yarn run watch' 'yarn run start'",
+    "clean": "rimraf dist",
+    "prerelease": "yarn build"
+  },
   "devDependencies": {
-    "@hotwired/stimulus": "^3.1.0",
     "@tailwindcss/forms": "^0.4.0",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.23",
-    "vite": "^2.8.0"
+    "vite": "^2.8.0",
+    "@hotwired/stimulus": "^3.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.4.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.79.0",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
   }
 }
