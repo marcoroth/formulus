@@ -1,0 +1,47 @@
+name: Node.js Package
+
+on:
+  release:
+    types: [created]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          always-auth: true
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+          scope: '@marcoroth'
+
+      - run: |
+          node -e "
+            const sha = process.env.GITHUB_SHA.slice(0, 7)
+            const eventName = process.env.GITHUB_EVENT_NAME
+            const isRelease = eventName === 'release'
+
+            const package = JSON.parse(fs.readFileSync('package.json'))
+
+            if (!package.publishConfig) package.publishConfig = {}
+            if (!isRelease) package.version = package.version + '.' + sha
+
+            package.name = '@marcoroth/formulus'
+            package.publishConfig.registry = 'https://npm.pkg.github.com'
+
+            fs.writeFileSync('package.json', JSON.stringify(package))
+          "
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
