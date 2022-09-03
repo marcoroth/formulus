@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@hotwired/stimulus": "^3.0.1",
+    "@hotwired/stimulus": "^3.1.0",
     "@tailwindcss/forms": "^0.4.0",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.6",
