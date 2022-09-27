@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>logo</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-4-Copy" fill="#000000">
-            <path d="M80,0 C81.1045695,-2.02906125e-16 82,0.8954305 82,2 L82,80 C82,81.1045695 81.1045695,82 80,82 L2,82 C0.8954305,82 1.3527075e-16,81.1045695 0,80 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L80,0 Z M71,56 L11,56 L11,66 L71,66 L71,56 Z M71,36 L11,36 L11,46 L71,46 L71,36 Z M71,16 L11,16 L11,26 L71,26 L71,16 Z" id="logo"></path>
-        </g>
-    </g>
-</svg>
