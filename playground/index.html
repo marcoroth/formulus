@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" src="/main.js"></script>
+    <title>Formulus Playground</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" src="/index.js"></script>
   </head>
-  
+
   <body class="p-12 container mx-auto text-center">
-    <form data-controller="validation" data-action="submit->validation#submit" data-validation-report-value="false">
+    <form>
       <input type="text" placeholder="type=text"/>
-  
+
       <input type="text" required placeholder="type=text required"/>
 
       <input type="email" required placeholder="type=email required" />
-      
+
       <input type="text" minlength="3" required placeholder="type=text required minlength=3"/>
 
       <input min="5" max="10" type="number" required placeholder="type=number required min=5 max=10"/>
-  
+
       <input min="10" type="number" required placeholder="type=number required min=10"/>
 
-      <input data-action="click->validation#submit" type="submit" value="Submit">
+      <input type="submit" value="Submit">
    </form>
-
   </body>
 </html>
