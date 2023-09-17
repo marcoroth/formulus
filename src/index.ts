@@ -1,15 +1,4 @@
-class Formulus {
-  constructor() {}
-}
-
-declare global {
-  interface Window {
-    Formulus: Formulus
-  }
-}
-
-const formulus = new Formulus()
-
-window.Formulus = formulus
-
-export default formulus
+export * from "./config"
+export * from "./custom_attribute"
+export * from "./observer"
+export * from "./formulus"
