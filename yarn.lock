@@ -138,14 +138,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@open-wc/chai-dom-equals@^0.12.36":
-  version "0.12.36"
-  resolved "https://registry.yarnpkg.com/@open-wc/chai-dom-equals/-/chai-dom-equals-0.12.36.tgz#ed0eb56b9e98c4d7f7280facce6215654aae9f4c"
-  integrity sha512-Gt1fa37h4rtWPQGETSU4n1L678NmMi9KwHM1sH+JCGcz45rs8DBPx7MUVeGZ+HxRlbEI5t9LU2RGGv6xT2OlyA==
-  dependencies:
-    "@open-wc/semantic-dom-diff" "^0.13.16"
-    "@types/chai" "^4.1.7"
-
 "@open-wc/dedupe-mixin@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@open-wc/dedupe-mixin/-/dedupe-mixin-1.4.0.tgz#b3c58f8699b197bb5e923d624c720e67c9f324d6"
@@ -158,11 +150,6 @@
   dependencies:
     "@lit/reactive-element" "^1.0.0 || ^2.0.0"
     "@open-wc/dedupe-mixin" "^1.4.0"
-
-"@open-wc/semantic-dom-diff@^0.13.16":
-  version "0.13.21"
-  resolved "https://registry.yarnpkg.com/@open-wc/semantic-dom-diff/-/semantic-dom-diff-0.13.21.tgz#718b9ec5f9a98935fc775e577ad094ae8d8b7dea"
-  integrity sha512-BONpjHcGX2zFa9mfnwBCLEmlDsOHzT+j6Qt1yfK3MzFXFtAykfzFjAgaxPetu0YbBlCfXuMlfxI4vlRGCGMvFg==
 
 "@open-wc/semantic-dom-diff@^0.20.0":
   version "0.20.0"
@@ -182,15 +169,13 @@
     lit-html "^2.0.0 || ^3.0.0"
 
 "@open-wc/testing@^3.2.0":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@open-wc/testing/-/testing-3.2.1.tgz#27e2e555c16f3090a4c245808625e8d72e90f009"
-  integrity sha512-AW7WcCTkJ4oiXgIQUJ2XP11cDsMiRmG5Dr++NQwpER2qufAFTK5+0mLedQ6GnLbWe8kl6FoddkpBCMXKukLudQ==
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@open-wc/testing/-/testing-3.2.2.tgz#c952f4b20af0d201cc8cc436c2c3cdd338bf8177"
+  integrity sha512-byN4dJTd6ZyI9mWmI4lVj30uiu+rYvQr93g64Pd7UFBdAUgb02DHLj6fkJ1gjxA6LC/MeFd7K7mOZ4+vKrMptw==
   dependencies:
     "@esm-bundle/chai" "^4.3.4-fix.0"
-    "@open-wc/chai-dom-equals" "^0.12.36"
     "@open-wc/semantic-dom-diff" "^0.20.0"
     "@open-wc/testing-helpers" "^2.3.1"
-    "@types/chai" "^4.2.11"
     "@types/chai-dom" "^1.11.0"
     "@types/sinon-chai" "^3.2.3"
     chai-a11y-axe "^1.5.0"
@@ -283,7 +268,7 @@
   dependencies:
     "@types/chai" "*"
 
-"@types/chai@*", "@types/chai@^4.1.7", "@types/chai@^4.2.11", "@types/chai@^4.2.12", "@types/chai@^4.3.1":
+"@types/chai@*", "@types/chai@^4.2.12", "@types/chai@^4.3.1":
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.3.6.tgz#7b489e8baf393d5dd1266fb203ddd4ea941259e6"
   integrity sha512-VOVRLM1mBxIRxydiViqPcKn6MIxZytrbMpd6RJLIWKxUNr3zux8no0Oc7kJx0WAPIitgZ0gkrDS+btlqQpubpw==
