@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           always-auth: true
-          node-version: 16
+          node-version: 20
           registry-url: https://npm.pkg.github.com/
           scope: '@marcoroth'
 
