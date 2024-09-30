@@ -104,11 +104,11 @@
     "@lit-labs/ssr-dom-shim" "^1.1.2"
 
 "@lume/custom-attributes@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@lume/custom-attributes/-/custom-attributes-0.2.1.tgz#8a68cbe82323f7863f928166eb098114fe878d23"
-  integrity sha512-W5pn6ewjZWIcmuPyJfD9xzohsIFSaIfQ7SBu4Gjte/lsFX/VpmwWakgv94l4x1b+GUvfqEmTDRqmQKUU+70m+A==
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@lume/custom-attributes/-/custom-attributes-0.2.4.tgz#b46fdcf40d0b69d9c3168e6b420da1d2b65da760"
+  integrity sha512-1rZ6mkz4HYNuHr7vryvBUUIX2+BzYV1lU2rwLNOIAj9x3xbi0FuLgqF3dxjCuiUFpFpz8SSbkewVCtcZC7Oe1g==
   dependencies:
-    lowclass "^5.0.0"
+    lowclass "^8.0.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -2014,10 +2014,10 @@ log-update@^4.0.0:
     slice-ansi "^4.0.0"
     wrap-ansi "^6.2.0"
 
-lowclass@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/lowclass/-/lowclass-5.0.0.tgz#b87257c84d750aaaa4ec1247f860f6b8e5338433"
-  integrity sha512-4h8AjyhfSG28E9bd5a9zJYLVun6QwPW1cfsBfJkcNC9h1+rfCWwLTS41kaVTor9Rzndlb3ytmxRbtWCOdwdI/w==
+lowclass@^8.0.0:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/lowclass/-/lowclass-8.0.1.tgz#2679313d8ffa6f4802d0bf007995108f6413ea64"
+  integrity sha512-E3PL/doaVdgh4iufl5WABDfZF7EwaKukvoNnoU6CvMotPmCWVRzZE/5Sxj12BYq/m8uclHygsB8FOBSaYNXeNA==
 
 lru-cache@^6.0.0:
   version "6.0.0"
