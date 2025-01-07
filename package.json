@@ -21,7 +21,7 @@
     "prerelease": "yarn build"
   },
   "devDependencies": {
-    "@lume/custom-attributes": "^0.2.1",
+    "@lume/custom-attributes": "^0.3.0",
     "@open-wc/testing": "^4.0.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.3",

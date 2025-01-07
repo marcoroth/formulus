@@ -103,10 +103,10 @@
   dependencies:
     "@lit-labs/ssr-dom-shim" "^1.1.2"
 
-"@lume/custom-attributes@^0.2.1":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@lume/custom-attributes/-/custom-attributes-0.2.4.tgz#b46fdcf40d0b69d9c3168e6b420da1d2b65da760"
-  integrity sha512-1rZ6mkz4HYNuHr7vryvBUUIX2+BzYV1lU2rwLNOIAj9x3xbi0FuLgqF3dxjCuiUFpFpz8SSbkewVCtcZC7Oe1g==
+"@lume/custom-attributes@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@lume/custom-attributes/-/custom-attributes-0.3.0.tgz#a15ebb6da528ed7afe0d727190578983ab8f1fd3"
+  integrity sha512-dcef0G5BTK5Jj8J3yQhkgxt1AB73JfwPKkaumovy/bJQiqNTlQ/rTF3Guf6oAOiZ1ZOfvJ8NzrHCiv2R83HnVg==
   dependencies:
     lowclass "^8.0.0"
 
