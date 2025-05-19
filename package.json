@@ -1,6 +1,6 @@
 {
   "name": "formulus",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "Client-side HTML form validations",
   "main": "dist/index.js",
   "module": "dist/index.js",
